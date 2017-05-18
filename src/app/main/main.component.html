@@ -1,0 +1,80 @@
+  <!--[if lt IE 8]>
+    <p class="chromeframe">Вы используете устаревший браузер. Пожалуйста обновите его </p>
+  <![endif]-->
+
+<section id="main">
+        <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 nav-padding">
+          <nav id="nav" class="hidden-xs text-center">
+            <div class="row">
+              <ul>
+                <li class="list-inline ">
+                  <a href="#main">Главная</a>
+                  <a href="#features">Приложение</a>
+                  <a href="#video">Видео</a>
+                  <a href="#price">Партнерам</a>
+                  <a href="#discount">Дисконт</a>
+                  <a href="#footer">Контакты</a>
+                  <a *ngIf="!(isLoggedIn$ | async)" routerLink="/sign-up">Sign up</a>
+                  <a *ngIf="!(isLoggedIn$ | async)" (click)="showLogInModal()">Log In</a>
+                  <a (click)="logOut()">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="visible-xs col-xs-12 nav-mini text-center navigate">
+              <ul class="nav-min hiden-md hidden-sm hidden-xs text-center ">
+                <li >
+                  <a href="#main" class="text-justify">Главная</a>
+                </li>
+                <li>
+                  <a href="#features" class="text-justify">Приложение</a>
+                </li>  
+                <li>
+                  <a href="#video" class="text-justify">Видео</a>
+                </li>
+                <li>  
+                  <a href="#price" class="text-justify">Партнерам</a>
+                </li>
+                <li>  
+                  <a href="#discount" class="text-justify">Дисконт</a>
+                </li>
+                <li>  
+                  <a href="#footer" class="text-justify">Контакты</a>
+                </li>  
+              </ul>
+              <a href="#" id="aclick">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+  <div class="container">
+    <div class="row">
+      <div class="row text-center">
+        <div class="col-md-12 col-xs-12 col-sm-12 logo wow ">
+          <img src="assets/img/logo.png" alt="Мой Орск" title="Приложение Мой Орск" class="img-responsive center-block">
+          <h1 class="">Мой Орск</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1 class="heading">Весь город в твоем мобильном</h1>
+          <div class="button-padding  ">
+            <button class="android " onclick="toGooglePlay()">
+               <img src="assets/img/google.png" alt="Мой Орск на Google Play" title="Скачать приложение Мой Орск с Google Play" class="img-responsive center-block">
+              </button>
+            <button class="apple " onclick="toAppleStore()">
+               <img src="assets/img/apple.png" alt="Мой Орск на Apple Store" title="Скачать приложение Мой Орск с Apple Store" class="img-responsive center-block"> 
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <img src="assets/img/mobile3.png" alt="Интерфейс приложения Мой Орск" title="Интерфейс приложения Мой Орск" class="img-responsive center-block">
+      </div>
+    </div>
+  </div>
+</section>
+<app-log-in></app-log-in>
+<app-nav></app-nav>

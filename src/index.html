@@ -1,14 +1,611 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Moyorskapp</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="yandex-verification" content="e3f8eb9af9b9dd45" />
+  <title>"Мой Орск" - мобильное приложение города Орска</title>
+  <meta name="keywords" content="Орск, сайт, мобильное,  приложение, развлечение, новости, организации,
+      акции, мероприятия, афиша, погода, магазины, кинотеатры">
+  <meta name ="description" content="В мобильном приложении Мой Орск вы найдете последнии новости,
+   справочник организаций и услуг, информацию о предстоящих мероприятиях, акции проводимые в городе Орск">
+   <meta name="keyphrases" content="Мобильное приложение Орск, сайт города Орска">
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <div id="upbutton"></div>
   <app-root>Loading...</app-root>
+
+
+<noindex>
+
+   <!--Modal -->
+
+<div class="modal fade" id="free" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Адрес.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Режим работы.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Указатель на карте.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Номера телефонов.</p>
+          </li>
+        </ul>
+        <p><strong>Стоимость:</strong><p>
+        <p class="modal-free">Бесплатно.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bronze" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+          <ul>
+            <li>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Адрес.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Режим работы.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Указатель на карте.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Номера телефонов.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Ссылка на интернет-ресурс.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Описание.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Подсветка.</p>
+            </li>
+          </ul>
+          <p><strong>Стоимость:</strong>
+           <p>
+           <p class="modal-free">500 руб/мес</p>
+          <p class="modal-free">5000 руб/год</p>
+      </div>
+
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="silver1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Адрес.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Режим работы.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Указатель на карте.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Номера телефонов.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Ссылка на интернет-ресурс.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Описание.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Подсветка.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Галерея 3 фото.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Вверх ТОП 5 в списке организаций.</p>
+          </li>
+        </ul>
+        <p><strong>Стоимость:</strong>
+       <p>
+      <p class="modal-free">1000 руб/мес</p>
+      <p class="modal-free">10000 руб/год</p>
+      </div>
+
+
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="gold" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+          <ul>
+            <li>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещаем в категорию "Дисконт"</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Адрес.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Режим работы.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Указатель на карте.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Номера телефонов.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Ссылка на интернет-ресурс.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Описание.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Подсветка.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Галерея 5 фото. </p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Видеоролик.</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Вверх ТОП 3 в списке организаций.</p>
+            </li>
+          </ul>
+          <p><strong>Стоимость:</strong>
+          <p>
+          <p class="modal-free">2000 руб/мес</p>
+          <p class="modal-free">20000 руб/год</p>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="actions" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+          <ul>
+            <li>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение в разделе «Акции»</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение описания проводимой кампании</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение медиа-контента (фото, видео)</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение контактной информации</p>
+            </li>
+            </ul>
+              <p><strong>Условия</strong></p>
+              <p class="modal-free"> Предоставление описания кампании</p>
+              <p class="modal-free"> Минимум 1 фото для логотипа </p>
+              <p><strong>Стоимость:</strong>
+              <p>
+              <p class="modal-free"> Размещение -1000 руб/ 5дней</p>
+              <p class="modal-free"> Размещение + выделение - 2000 руб/ 5Дней </p>
+              <p class="modal-free"> Размещение + выделение 
+                            + закрепление - 1000 руб/сутки.(При заказе от 3 дней PUSH-уведомления в подарок) </p>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="push" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+        <ul>
+          <li>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Доставка Push-уведомления каждому пользователю</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Высокий показатель активности - до 70%</p>
+          </li>
+          </ul>
+           <p><strong>Условия:</strong></p>
+           <p class="modal-free"> Перенаправление PUSH-уведомления на любую акцию, новость, афишу или организацию.</p>
+           <p><strong>Стоимость:</strong>
+           <p>
+           <p class="modal-free">1000 руб/PUSH-уведомление</p>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="afisha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение в разделе «Афиша»</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение описания события</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение медиа-контента (фото, видео)</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение контактной информации</p>
+          </li>
+        </ul>
+          <p><strong>Условия: </strong></p>
+          <p class="modal-free"> Предоставление описания события</p>
+          <p class="modal-free"> Минимум 1 фото для логотипа</p>
+          <p><strong>Стоимость:</strong>
+          <p>
+          <p class="modal-free"> Размещение -1000руб/5дней</p>
+          <p class="modal-free"> Размещение + выделение -2000руб/5дней</p>
+          <p class="modal-free"> Размещение + выделение 
+              + закрепление -1000руб/сутки.(При заказе от 3 дней  PUSH-уведомления в подарок)</p>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>Вы получаете:</strong></p>
+      </div>
+      <div class="modal-body">
+        <!--<ul>
+          <li>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Адрес.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Режим работы.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Указатель на карте.</p>
+            <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Номера телефонов.</p>
+          </li>
+        </ul>
+        <p><strong>Стоимость:</strong><p>
+        <p class="modal-free">Бесплатно.</p>-->
+          <ul>
+            <li>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение в разделе «Новости»</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Размещение медиа-контента (фото, видео)</p>
+              <p><i class="fa fa-check modal-free" aria-hidden="true"></i> Без удаления из ленты</p>
+            </li>
+          </ul>
+          <p><strong>Условия: </strong></p>
+          <p class="modal-free"> Предоставление текста новости </p>
+          <p class="modal-free"> Минимум 1 фото для логотипа </p>
+          <p><strong>Стоимость:</strong>
+          <p>
+          <p class="modal-free"> Размещение - 1000руб/5дней</p>
+          <p class="modal-free"> Размещение + выделение - 2000/5дней</p>
+         <p class="modal-free"> Размещение + выделение 
+                            + закрепление 1000/сутки.(При заказе от 3 дней PUSH-уведомления в подарок)</p> 
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="novaya_vanna" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>НОВАЯ ВАННА</strong></p>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-8">
+          <p>Подарите вашей ванне новую жизнь !!! </p>
+          <ul>
+            <li>-Ударопрочная и износостойкая</li>
+            <li>-Экологически безопасная</li>
+            <li>-Цвет по желанию заказчика</li>
+            <li>-Не трескается не отслаивается</li>
+            <li>-Ржавчина и грязь не въедается</li>
+            <li>-Не требует демонтажа ванны</li>
+            <li>-Гарантия 3 года</li>
+          </ul>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/novaya_vanna.png" alt="Новая ванна партнер по дисконтной программе Мой Орск" class="img-responsive center-block">
+          </div>
+        </div>
+                               
+        <p class="modal-free"><strong>Действует скидка 200 рублей</strong><p>
+        <p><strong>Орск, Новотроицк, Гай.</strong><p>
+          <ul>
+            <li>Телефоны:</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79058487970">    +7 905 848 79 70
+               </a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79228002227">    +7 922 800 22 27 
+              </a></li>
+            <li>Email:</li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>    <a href="mailto:gde_moua@mail.ru">gde_moua@mail.ru 
+              </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="vega" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>"Вега" салон штор</strong></p>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        <div class="col-md-8">
+        <p>
+         Декор окон. Пошив любой сложности, римских штор, тюли, ламбрекенов, а так же японские панельки,
+         покрывала, наволочки и многое другое. Широкий ассортимент в наличии и под заказ.
+      </p>
+      <p>Всегда для Вас в нашем салоне: <p>
+        <ul>
+          <li>- Пошив штор и других текстильных изделий ( покрывала, подушки, скатерти, салфетки, балдахины, абажуры) любой сложности в собственном швейном ателье, в том числе пошив римских и японских штор;</li>
+          <li>- Разработка текстильного дизайн-проекта; </li>
+          <li>- Услуга «Выезд дизайнера» бесплатно; </li>
+          <li>- Комплексная услуга «Окно под ключ» (замер, разработка дизайн-проекта, подбор карнизов и рулонных штор, пошив штор, монтаж карнизов и штор);</li>
+          <li>- Замер, а также монтаж карнизов, рулонных штор и жалюзи.</li>
+        </ul>
+        </div>  
+        <div class="col-md-4">
+          <img src="assets/img/vega.png" alt="Вега партнер по дисконтной программе Мой Орск" class="img-responsive center-block">
+        </div>  
+        </div>  
+          <p class="modal-free"><strong>Скидка 10 % на ткани(тюль, портьера). Скидка действительна до конца мая.</strong></p>
+          <p><strong>г.Орск, ул. Тагильская, 2б</strong><p>
+            <ul>
+            <li>Телефоны:</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+73537316065">    +7 (3537) 31-60-65
+               </a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79198521211">   +7(919)-852-1211  
+              </a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79058996065">   +7(905)-899-6065    
+              </a></li>
+            <li>Странички в интернете:</li>
+            <li>    <a href="https://vk.com/clubanewstyle">https://vk.com/clubanewstyle 
+              </a></li>
+            <li>    <a href="https://m.ok.ru/group52529363550342">https://m.ok.ru/group52529363550342 
+              </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="gamma-trokotaj" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">
+          <!--Modal title-->
+        </h4>
+        <p class="modal-free"><strong>"ГАММА-ТРИКОТАЖ"</strong></p>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-8">
+        <p>"ГАММА-ТРИКОТАЖ" предлагает Вам широкий ассортимент трикотажной продукции собственного производства из полотна различной цветовой палитры.</p>
+        <ul>
+          <li>-Все изделия изготавливаются на новейшем импортном оборудовании, на каждом этапе производства проходят строгий контроль качества.</li>
+          <li>-Детям-нижнее белье, комфортные пижамы, одежда для активного отдыха.</li>
+          <li>Мужчинам и женщинам практичную повседневную одежду.</li>
+          <li>Так-же в наших торговых точках Вы сможете приобрести носки и колготки от Российских производителей. </li>
+          <li>Цены на нашу продукцию приятные и  доступные! </li>
+        </ul>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/gamma-trokotaj.png" alt="Гамма-Трикотаж партнер дисконтной программы Мой Орск" class="img-responsive center-block">
+        </div>    
+        <div class="row">
+        </div>  
+        <p class="modal-free"><strong>** На трикотажные изделия действует скидка 10 %.</strong></p>
+        <p><strong> Адреса торговых точек:</strong><p>
+          <ul>
+            <li>- магазин " Незнакомка", пр-кт Ленина д 60</li>
+            <li>- магазин " ГАММА-ТРИКОТАЖ", ул Гомельская д 20 ( ост. Тбилисская)</li>
+            <li>- магазин " ГАММА-ТРИКОТАЖ", ул Вокзальное Шоссе 28 (ТЗБ склад № 55, ост. Транспортная)</li>
+          </ul>
+                    <ul>
+            <li>Телефоны:</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79292014076">    +79292014076
+               <!--Чтобы позвонить нижми тут-->
+               </a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79228841677">    +79228841677 
+              <!--Чтобы позвонить нажми тут-->
+              </a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79226212071">    +79226212071 
+              <!--Чтобы позвонить нажми тут-->
+              </a></li>
+            <li>Email:</li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>    <a href="mailto:rusgalina@list.ru">rusgalina@list.ru 
+              <!--Чтобы отправить письмо нажми тут-->
+              </a></li>
+            <li>Страничка в интернете:</li>
+            <li>    <a href="http://www.gamma-orsk.ru">http://www.gamma-orsk.ru 
+              <!--Чтобы отправить письмо нажми тут-->
+              </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>-->
+    <script
+       src="https://code.jquery.com/jquery-3.2.1.min.js"
+       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+       crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+<script>
+  $(document).ready(
+    function () {
+      $("html").niceScroll({ cursorcolor: "#000" });
+    }
+  );
+</script>
+<script>
+  var h_hght = 60; // высота шапки
+  var h_mrg = 0;    // отступ когда шапка уже не видна
+                  
+  $(function(){
+  
+      var elem = $('#top_nav');
+      var top = $(this).scrollTop();
+      
+      if(top > h_hght){
+          elem.css('top', h_mrg);
+      }           
+      
+      $(window).scroll(function(){
+          top = $(this).scrollTop();
+          
+          if (top+h_mrg < h_hght) {
+              elem.css('top', (h_hght-top));
+          } else {
+              elem.css('top', h_mrg);
+          }
+      });
+  
+  });
+</script>
+<!--<script>
+  $(document).ready(function(){
+      $("header").on("click","a", function (event) {
+          //отменяем стандартную обработку нажатия по ссылке
+          event.preventDefault();
+          //забираем идентификатор бока с атрибута href
+          var id  = $(this).attr('href'),
+          //узнаем высоту от начала страницы до блока на который ссылается якорь
+              top = $(id).offset().top;
+          //анимируем переход на расстояние - top за 1500 мс
+          $('body,html').animate({scrollTop: top}, 1000);
+      });
+  });
+</script> -->
+<script>
+  function toGooglePlay() {
+    window.location.href="https://play.google.com/store/apps/details?id=ru.moygorod.orsk";
+  }
+
+  function toAppleStore() {
+    window.location.href="https://itunes.apple.com/us/app/id1207930011?l=ru&ls=1&mt=8";
+  }
+</script>
+
+<script>
+$('document').ready(
+  function(e) {
+    $( "#aclick" ).click(function() {
+        // alert( "Handler for .click() called." );
+            if( $('.nav-min').hasClass('hidden-xs')  ) {
+                  $('.nav-min').removeClass('hidden-xs');
+              } else {
+                $('.nav-min').addClass('hidden-xs');
+              }
+        });
+  }
+);
+</script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 300);
+    });
+</script>
+
+<script>
+$(window).scroll(function(){
+      if ($(this).scrollTop() > 10) {
+          $('#nav').addClass('fixed');
+      } else {
+          $('#nav').removeClass('fixed');
+      }
+});
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter44365405 = new Ya.Metrika({
+                    id:44365405,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/44365405" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</noindex>
 </body>
 </html>
