@@ -5,6 +5,7 @@ import { AdvertDisplayComponent } from './advert-display/advert-display.componen
 import { AdvertsService } from './adverts.service';
 import { AdvertEditComponent } from './advert-edit/advert-edit.component';
 import { AdvertComponent } from './advert/advert.component';
+import { AdvertsListComponent } from './adverts-list/adverts-list.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { AdvertComponent } from './advert/advert.component';
   declarations: [
     AdvertDisplayComponent,
     AdvertEditComponent,
-    AdvertComponent
+    AdvertComponent,
+    AdvertsListComponent
   ],
   providers: [
     AdvertsService
