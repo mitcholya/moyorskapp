@@ -11,3 +11,17 @@
         </li>
     </ul>
 </div>
+
+<div class="container">
+    <h1>Your Advert List</h1>
+    <ul class="list-group">
+        <div *ngFor="let advert of (adverts$ | async)" >
+            <li class="list-group-item" *ngIf="advert.uid">
+                <app-advert [advert]="advert"></app-advert>
+            </li>
+        </div>
+        <li class="list-group-item">
+            <app-advert-edit [cancelable]="false"></app-advert-edit>
+        </li>
+    </ul>
+</div>

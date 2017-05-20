@@ -10,11 +10,13 @@ import { UpdatePasswordComponent } from './update-password/update-password.compo
 import { UpdatePhotoUrlComponent } from './update-photo-url/update-photo-url.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AdvertsModule } from '../adverts/adverts.module'; 
 
 @NgModule({
     imports: [
         SharedModule,
         TodosModule,
+        AdvertsModule,
         RouterModule.forChild(AccountRoutes)
     ],
     declarations: [

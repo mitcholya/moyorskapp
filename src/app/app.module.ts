@@ -35,6 +35,10 @@ import { RouterStoreModule } from '@ngrx/router-store';
 import { StoreModule } from '@ngrx/store';
 import { NavComponent } from './nav/nav.component';
 import { ContentComponent } from './content/content.component';
+import { AdvertsModule } from './adverts/adverts.module';
+// import { AdvertComponent } from './adverts/advert/advert.component';
+// import { AdvertDisplayComponent } from './adverts/advert-display/advert-display.component';
+// import { AdvertEditComponent } from './adverts/advert-edit/advert-edit.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,10 @@ import { ContentComponent } from './content/content.component';
     LogInComponent,
     ResetPasswordComponent,
     NavComponent,
-    ContentComponent
+    ContentComponent,
+    // AdvertComponent,
+    // AdvertDisplayComponent,
+    // AdvertEditComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +70,8 @@ import { ContentComponent } from './content/content.component';
     RouterStoreModule.connectRouter(),
     ...RunEffects(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AccountModule
+    AdvertsModule,
+    AccountModule,
   ],
   providers: [
         StateService,

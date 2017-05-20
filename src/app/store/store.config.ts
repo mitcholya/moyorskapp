@@ -18,6 +18,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { routerReducer } from '@ngrx/router-store';
 import { ActionReducer, combineReducers } from '@ngrx/store';
 import { localStorageSync } from 'ngrx-store-localstorage';
+import { AdvertsEffects } from './adverts/adverts.effects';
+import { AdvertsReducer } from './adverts/adverts.reducer'
 
 /**
  * Transforms reducers into composable meta-reducers
@@ -46,7 +48,8 @@ const CombinedReducers = compose(
     }),
     router: routerReducer,
     nav: NavReducer,
-    todos: TodosReducer
+    todos: TodosReducer,
+    adverts: AdvertsReducer
 });
 
 export function Reducer(state, action) {
@@ -61,6 +64,7 @@ export function RunEffects() {
         EffectsModule.run(UpdatePasswordEffects),
         EffectsModule.run(UpdateEmailEffects),
         EffectsModule.run(ResendEmailVerificationEffects),
-        EffectsModule.run(TodosEffects)
+        EffectsModule.run(TodosEffects),
+        EffectsModule.run(AdvertsEffects)
     ];
 }

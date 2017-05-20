@@ -3,9 +3,11 @@ import {
     DefaultRouterState,
     DefaultTodosState,
     DefaultUserState,
+    DefaultAdvertsState,
     NavState,
     TodosState,
-    UserState
+    UserState,
+    AdvertsState
 } from './';
 import { RouterState } from '@ngrx/router-store';
 
@@ -14,6 +16,7 @@ export interface AppState {
     router: RouterState;
     nav: NavState;
     todos: TodosState;
+    adverts: AdvertsState
 }
 
 export const DefaultAppState: AppState = {
@@ -21,4 +24,5 @@ export const DefaultAppState: AppState = {
     router: DefaultRouterState,
     nav: DefaultNavState,
     todos: DefaultTodosState,
+    adverts: DefaultAdvertsState
 };

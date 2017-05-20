@@ -1,0 +1,6 @@
+<!--<p>
+  advert works!
+</p>-->
+
+<app-advert-display [advert]="advert" *ngIf="!(isEditing$ | async)"></app-advert-display>
+<app-advert-edit [advert]="advert" *ngIf="isEditing$ | async"></app-advert-edit>
